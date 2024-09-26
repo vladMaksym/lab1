@@ -1,0 +1,74 @@
+/*загальні стилі*/
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.header {
+    background-color: #e2e2e2;
+    padding: 10px;
+    text-align: center;
+}
+
+.tasks-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.tasks-list>* {
+    margin: 10px;
+}
+
+.home-link {
+    position: absolute;
+    top: 11%;
+    left: 20px;
+}
+
+/*стилі для головної сторінки*/
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #00f;
+}
+
+/*стилі для таблиці*/
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+.no-border {
+    border-bottom: none;
+    border-top: none;
+}
+
+.no-border-bottom {
+    border-bottom: none;
+}
+
+/*стилі для форми*/
+
+fieldset {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}

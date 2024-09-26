@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="main.html" class="home-link"
+        ><img src="left.png" width="50px"
+      /></a>
+      <h1>Лабораторна робота №1</h1>
+      <h2>Робота з формами</h2>
+      <p>Максимчук Владислав АнД-31</p>
+      <p>13 варіант</p>
+    </div>
+
+    <div class="tasks-list">
+      <h3>Завдання:</h3>
+      <p>
+        Необхідно розробити форму для введення інформації про фільм до БД
+        фільмів. Необхідно заповнити наступні данні:
+      </p>
+      <ul>
+        <li>
+          дані про фільм, включають назву фільму, жанр(вибирається зі списку),
+          дату виходу на екрани, опис фільму, картинку з афішою;
+        </li>
+        <li>
+          дані про режисера, включають ПІБ, дату народження, біографію,
+          посилання на веб-сайт.
+        </li>
+      </ul>
+    </div>
+
+    <form onsubmit="alert('Форма відправлена');">
+      <fieldset>
+        <legend>Фільм</legend>
+
+        <label for="title">Назва фільму:</label><br />
+        <input type="text" id="title" name="title" required /><br /><br />
+
+        <label for="genre">Жанр:</label><br />
+        <select id="genre" name="genre" required>
+          <option value="драма">Драма</option>
+          <option value="комедія">Комедія</option>
+          <option value="трилер">Трилер</option>
+          <option value="фантастика">Фантастика</option>
+          <option value="жахи">Жахи</option></select
+        ><br /><br />
+
+        <label for="release_date">Дата виходу на екрани:</label><br />
+        <input
+          type="date"
+          id="release_date"
+          name="release_date"
+          required
+        /><br /><br />
+
+        <label for="description">Опис фільму:</label><br />
+        <textarea
+          id="description"
+          name="description"
+          rows="5"
+          cols="50"
+          required
+        ></textarea
+        ><br /><br />
+
+        <label for="poster">Афіша:</label><br />
+        <input
+          type="file"
+          id="poster"
+          name="poster"
+          accept="image/*"
+          required
+        /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Режисера</legend>
+
+        <label for="director_name">ПІБ режисера:</label><br />
+        <input
+          type="text"
+          id="director_name"
+          name="director_name"
+          required
+        /><br /><br />
+
+        <label for="dob">Дата народження:</label><br />
+        <input type="date" id="dob" name="dob" required /><br /><br />
+
+        <label for="bio">Біографія:</label><br />
+        <textarea id="bio" name="bio" rows="5" cols="50" required></textarea
+        ><br /><br />
+
+        <label for="website">Веб-сайт:</label><br />
+        <input type="url" id="website" name="website" /><br /><br />
+      </fieldset>
+
+      <button type="submit">Відправити</button>
+    </form>
+  </body>
+</html>

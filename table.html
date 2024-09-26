@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Таблиця</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="main.html" class="home-link"
+        ><img src="left.png" width="50px"
+      /></a>
+      <h1>Лабораторна робота №1</h1>
+      <h2>Робота з таблицями</h2>
+      <p>Максимчук Владислав АнД-31</p>
+      <p>13 варіант</p>
+    </div>
+
+    <div>
+      <h3>Завдання:</h3>
+      <p>створити веб-сторінку з таблицею навантажень на констуркції</p>
+      <img src="table.png" />
+      <table>
+        <caption><em>Таблиця 4.<em> <b>Навантаження на констуркції</b></caption>
+        <thead>
+          <tr>
+            <th rowspan="3" width="38px">№№</th>
+            <th rowspan="3">Констуркції</th>
+            <th rowspan="3">Найменування навантаження</th>
+            <th colspan="4">
+              Навантаження <br />(над рисою – нормативні,<br />
+              під рисою – розрахункові)
+            </th>
+          </tr>
+          <tr>
+            <th rowspan="2">Постій-<br />не</th>
+            <th colspan="2">Тимчасове</th>
+            <th rowspan="2">Повне</th>
+          </tr>
+          <tr>
+            <th>Три-<br />вале</th>
+            <th>Корот-<br />кочас-<br />не</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td class="no-border">1</td>
+            <td rowspan="11">Перекриття<br />(крок ребер<br />0,6 м)</td>
+            <td class="no-border">
+              В житлових приміщеннях при товщині з/б плити:
+            </td>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+          </tr>
+          <tr>
+            <td class="no-border"></td>
+            <td class="no-border">3 см</td>
+            <td class="no-border"><u>169,7</u> <br />199,1</td>
+            <td class="no-border"><u>45,6</u> <br />46,4</td>
+            <td class="no-border"><u>81,0</u> <br />105,3</td>
+            <td class="no-border"><u>296,3</u> <br />360,8</td>
+          </tr>
+          <tr>
+            <td class="no-border"></td>
+            <td class="no-border">5 см</td>
+            <td class="no-border"><u>199,7</u> <br />232,1</td>
+            <td class="no-border"><u>45,6</u> <br />56,4</td>
+            <td class="no-border"><u>81,0</u> <br />105,3</td>
+            <td class="no-border"><u>326,3</u> <br />393,8</td>
+          </tr>
+          <tr>
+            <td class="no-border"></td>
+            <td class="no-border">7 см</td>
+            <td class="no-border"><u>229,7</u> <br />265,1</td>
+            <td class="no-border"><u>45,6</u> <br />56,4</td>
+            <td class="no-border"><u>81,0</u> <br />105,3</td>
+            <td class="no-border"><u>354,3</u> <br />426,8</td>
+          </tr>
+          <tr>
+            <td class="no-border-bottom">2</td>
+            <td class="no-border-bottom">
+              З урахуванням навантаження від омонолічування вищерозташованого
+              поверху при товщині з/б плити:
+            </td>
+            <td class="no-border-bottom"></td>
+            <td class="no-border-bottom"></td>
+            <td class="no-border-bottom"></td>
+            <td class="no-border-bottom"></td>
+          </tr>
+          <tr>
+            <td class="no-border"></td>
+            <td class="no-border">3 см</td>
+            <td class="no-border"><u>169,7</u> <br />199,1</td>
+            <td class="no-border">–</td>
+            <td class="no-border"><u>142,7</u> <br />164,0</td>
+            <td class="no-border"><u>312,4</u> <br />363,1</td>
+          </tr>
+          <tr>
+            <td class="no-border"></td>
+            <td class="no-border">5 см</td>
+            <td class="no-border"><u>199,7</u> <br />232,1</td>
+            <td class="no-border">–</td>
+            <td class="no-border"><u>172,7</u> <br />197,0</td>
+            <td class="no-border"><u>372,4</u> <br />429,1</td>
+          </tr>
+          <tr>
+            <td class="no-border"></td>
+            <td class="no-border">7 см</td>
+            <td class="no-border"><u>229,7</u> <br />265,1</td>
+            <td class="no-border">–</td>
+            <td class="no-border"><u>202,7</u> <br />230,0</td>
+            <td class="no-border"><u>432,4</u> <br />495,1</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>В приміщеннях горища (товщина з/б плити 6 см)</td>
+            <td><u>199,7</u> <br />232,1</td>
+            <td>–</td>
+            <td><u>42,0</u> <br />54,6</td>
+            <td><u>241,7</u> <br />286,7</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              В приміщеннях горища з урахуванням <br />
+              навантажень від омонолічування покриття
+            </td>
+            <td><u>199,1</u> <br />232,1</td>
+            <td>–</td>
+            <td><u>210,2</u> <br />231,5</td>
+            <td><u>409,9</u> <br />462,5</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>В вестибюлях та коридорах</td>
+            <td><u>199,7</u> <br />232,1</td>
+            <td><u>57,0</u> <br />74,1</td>
+            <td><u>162,0</u> <br />194,4</td>
+            <td><u>418,7</u> <br />500,6</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td rowspan="2">Покриття</td>
+            <td>
+              На горизонтальну проекцію ребра покриття (крок <br />
+              ребер 0,6 м, товщина плити 3 см)
+            </td>
+            <td><u>183,8</u> <br />209,3</td>
+            <td>–</td>
+            <td><u>42,0</u> <br />58,8</td>
+            <td><u>225,8</u> <br />268,1</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>
+              На гребневу балку перерізом 0,3 м х 0,4 м <br />
+              (при довжині балки 7 м та вантажній площі – <br />
+              7 м<sup>2</sup> їх горизонтальних проекцій)
+            </td>
+            <td><u>619,9</u> <br />689,4</td>
+            <td>–</td>
+            <td><u>70,0 </u> <br />98,0</td>
+            <td><u>685,0</u> <br />787,0</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
